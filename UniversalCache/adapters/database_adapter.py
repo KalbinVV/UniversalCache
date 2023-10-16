@@ -14,7 +14,7 @@ class CacheRecord(Base):
     __tablename__ = 'universal_cache'
 
     key = Column(Text, primary_key=True, unique=True, nullable=False)
-    value = Column(Text, unique=True, nullable=False)
+    value = Column(Text, nullable=False)
     expiration_time = Column(DateTime, nullable=True)
 
 
